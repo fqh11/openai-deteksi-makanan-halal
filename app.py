@@ -1,6 +1,10 @@
 from flask import Flask, render_template, request, jsonify, send_from_directory
 from response2 import extracted_text, generate_classification
 import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 app = Flask(__name__)
 UPLOAD_FOLDER = "uploads"
