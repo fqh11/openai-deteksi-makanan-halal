@@ -6,10 +6,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Halal Food Detection</title>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4 flex-col">
 
-     <!-- How to Use Button (Top Right) -->
-     <button id="howToUseBtn" class="absolute top-4 right-4 bg-gray-300 text-gray-800 px-3 py-1 text-sm rounded hover:bg-gray-400 transition flex items-center gap-1 shadow">
+    <!-- How to Use Button (Top Right) -->
+    <button id="howToUseBtn" class="absolute top-4 right-4 bg-gray-300 text-gray-800 px-3 py-1 text-sm rounded hover:bg-gray-400 transition flex items-center gap-1 shadow">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
@@ -32,6 +32,11 @@
                 <img src="{{ url_for('static', filename='example.jpg') }}" alt="Contoh Gambar" class="rounded shadow w-full object-contain max-h-64">
             </div>
         </div>
+    </div>
+
+    <!-- App Title Container -->
+    <div class="w-full max-w-md bg-white shadow-md rounded-lg p-4 mb-4 text-center">
+        <h1 class="text-2xl font-bold text-green-700">Halal Food Scanner</h1>
     </div>
 
     <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-6 text-center">
